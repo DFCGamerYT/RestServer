@@ -1,0 +1,30 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Genero</th>        
+        <th>Estado</th>
+        <th>Modificar</th>        
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let persona of personas">
+        <th class="row">{{persona.id}}</th>
+        <td>{{persona.nombre}}</td>
+        <td>{{persona.apellido}}</td>
+        <td>{{persona.genero | genero}}</td>
+        <td>{{persona.estado | estado}}</td>
+        <td>
+          <a class="btn btn-primary" [routerLink]="[persona.id, 'modificar']">Modificar</a>
+        </td>
+        <td>
+          <button class="btn btn-danger" (click)="eliminar(persona.id)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

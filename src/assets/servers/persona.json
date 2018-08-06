@@ -1,0 +1,46 @@
+{
+  "persona": [
+    {
+      "nombre": "Adriana",
+      "apellido": "Perez",
+      "genero": 2,
+      "estado": "1",
+      "id": 6
+    },
+    {
+      "nombre": "Marlon",
+      "apellido": "Nunez",
+      "genero": 1,
+      "estado": 1,
+      "id": 7
+    },
+    {
+      "nombre": "David Ricardo",
+      "apellido": "Pardo",
+      "genero": "1",
+      "estado": "1",
+      "id": 8
+    },
+    {
+      "nombre": "Mitzy",
+      "apellido": "Roldan",
+      "genero": "2",
+      "estado": "1",
+      "id": 9
+    },
+    {
+      "nombre": "Sebastian",
+      "apellido": "Torres",
+      "genero": "1",
+      "estado": "1",
+      "id": 10
+    },
+    {
+      "estado": "1",
+      "genero": "1",
+      "nombre": "Mario",
+      "apellido": "Mendez",
+      "id": 11
+    }
+  ]
+}

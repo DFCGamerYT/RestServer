@@ -1,0 +1,34 @@
+<div class="container">
+  <form #f="ngForm" (ngSubmit)="actualizar()">
+    <div></div>
+    <p>
+      <label for="">Nombre:</label>
+      <input type="text" name="nombre" class="form-control" [(ngModel)]="persona.nombre" required>
+    </p>
+    <p>
+      <label for="">Apellido:</label>
+      <input type="text" name="apellido" class="form-control" [(ngModel)]="persona.apellido" required>
+    </p>
+    <p>
+      <label for="">Genero:</label>
+      <select name="genero" id="" [(ngModel)]="persona.genero" class="form-control" required>
+        <option value="0">Genero ...</option>
+        <option value="1">Masculino</option>
+        <option value="2">Femenino</option>
+      </select> 
+    </p>
+    <p>
+      <label for="">Estado:</label>
+      <select name="estado" id="" [(ngModel)]="persona.estado" class="form-control" required>
+        <option value="0">Genero ...</option>
+        <option value="1">Activo</option>
+        <option value="2">Inactivo</option>
+      </select>
+    </p>
+    <p>
+      <button class="btn btn-primary" [disabled]="!f.valid"> 
+        Crear Persona 
+      </button>
+    </p>
+  </form>
+</div>
